@@ -1,2 +1,10 @@
-- export DEPLOYPATH=/home/andyhkio/public_html/
-- /bin/cp index.html $DEPLOYPATH
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/andyhkio/public_html/
+    - /bin/cp linkedinbadge.png $DEPLOYPATH
+    - /bin/cp marvin.html $DEPLOYPATH
+    - /bin/cp personalportfolio.html $DEPLOYPATH
+    - /bin/cp productlanding.html $DEPLOYPATH
+    - /bin/cp survey.html $DEPLOYPATH
+    - /bin/cp techdoc.html $DEPLOYPATH
