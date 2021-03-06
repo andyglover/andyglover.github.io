@@ -12,11 +12,28 @@
     div { width: 500px; margin: 0 auto; background-color: gainsboro; padding:10px; border-radius: 5px; line-height: 25px;text-align:justify;}
     div#foot { text-align:center; margin-top: 10px; width:300px;}
     hr { margin: 25px auto 25px; width:500px;}
-    #portrait { width: 200px; height: 200px; border-radius: 100px;}
+      #portrait {
+          opacity: 0.5;
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+      }
+      #portrait:hover {
+          opacity: 1;
+      }
       #banner {
+          opacity: 0.5;
           width: 500px;
           border-radius: 10px;
       }
+          #banner:hover {
+              opacity: 1;
+          }
+      #badge {
+          opacity: 0.5;
+      }
+          #badge:hover {
+          opacity:1;}
     </style>
     
   
@@ -48,7 +65,7 @@
         <p>
             Connect with me on LinkedIn:<br />
             @<a href="https://www.linkedin.com/in/andyglover1/" alt="andyglover1 on LinkedIn">andyglover1</a><br />
-            <a href="https://www.linkedin.com/in/andyglover1/"><img src="linkedinbadge.png" /></a>
+            <a href="https://www.linkedin.com/in/andyglover1/"><img id="badge" src="linkedinbadge.png" /></a>
         </p>
 
     </div>
