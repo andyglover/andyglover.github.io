@@ -9,20 +9,64 @@
     a:hover{text-decoration: underline; font-weight: bold;}
     ul{text-align: left; }
     body{ font-family: monospace; text-align:center; }
-    div { width: 500px; margin: 0 auto; background-color: gainsboro; padding:10px; border-radius: 5px; line-height: 25px;text-align:justify;}
-    div#foot { text-align:center; margin-top: 10px; width:300px;}
+    .section { width: 500px; margin: 0 auto; background-color: gainsboro; padding:10px; border-radius: 5px; line-height: 25px;text-align:justify;}
+    #foot { text-align:center; margin-top: 10px; width:300px;}
     hr { margin: 25px auto 25px; width:500px;}
-      #portrait {
+      #topbanner-container {
+          position: relative;
+          top: 0;
+          height: 200px;
+          overflow: hidden;
+          vertical-align: bottom;
+          margin-bottom: -100px;
+      }
+      #topbanner {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          transform: translateX(-50%);
           opacity: 0.5;
+          /*transform: translateY(-50%);*/
+          /*margin-top: -200px;*/
+      }
+      #portrait-container {
+          margin: 0 auto;
+          position: relative;
+          background-color: white;
           width: 200px;
           height: 200px;
-          border-radius: 100px;
+          border-radius: 50%;
+          /*border:10px;*/
       }
+      #portrait {
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 90%;
+          height: 90%;
+          border-radius: 50%;
+          opacity: 0.9;
+      }
+
+      /*#portrait-container::after {
+          border-style: solid;
+          border-color: white;
+          border-width: 10px;
+      }
+
+      #portrait::after {
+          border-style: solid;
+          border-color: white;
+          border-width: 10px;
+      }*/
       #portrait:hover {
           opacity: 1;
       }
       #banner {
-          opacity: 0.5;
+          opacity: 0.9;
           width: 500px;
           border-radius: 10px;
       }
@@ -30,7 +74,7 @@
               opacity: 1;
           }
       #badge {
-          opacity: 0.5;
+          opacity: 0.9;
       }
           #badge:hover {
           opacity:1;}
@@ -42,12 +86,17 @@
 
 
 
-    <img id="portrait" src="portrait.jpg" />
+    <div id="topbanner-container">
+    <img id="topbanner" src="banner.png" />
+    </div>
+    <div id="portrait-container">
+         <img id="portrait" src="portrait.jpg" />
+    </div>
     <h1>AndyGlover .io</h1>
-    <div id="intro">I'm currently focused on learning to code by beginning with front end web development. Here are the projects I've worked on through FreeCodeCamp's curriculum.</div>
+    <div class="section" id="intro">I'm currently focused on learning to code by beginning with front end web development. Here are the projects I've worked on through FreeCodeCamp's curriculum.</div>
     <hr>
     <h2>My freeCodeCamp Projects</h2>
-    <div id="projects">
+    <div class="section" id="projects">
         The following projects are from the Responsive Web Design learning course on freeCodeCamp. They were built to practice my technical skills and to satisfy the requirements set by the course. I look forward to creating more fleshed-out projects as I discover and perfect my personal style, but for now, my focus is on learning the fundamentals.
         <ul>
             <li><a href="marvin.html">Build a Tribute Page</a></li>
@@ -61,7 +110,7 @@
     </div>
     <hr>
 
-    <div id="foot">
+    <div class="section" id="foot">
         <p>
             Connect with me on LinkedIn:<br />
             @<a href="https://www.linkedin.com/in/andyglover1/" alt="andyglover1 on LinkedIn">andyglover1</a><br />
