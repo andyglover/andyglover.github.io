@@ -1,0 +1,103 @@
+﻿a {
+    text-decoration: none;
+}
+
+ul {
+    text-align: left;
+}
+
+.imgfade {
+    opacity: 0.75;
+}
+
+    .imgfade:hover {
+    opacity: 1;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+body {
+    font-family: monospace;
+    text-align: center;
+}
+
+hr {
+    margin: 25px auto 25px;
+    width: 500px;
+}
+
+#banner {
+    width: 500px;
+    border-radius: 10px;
+}
+
+#foot {
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.section {
+    width: 500px;
+    margin: 0 auto;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+#topbanner-container {
+    position: relative;
+    top: 0;
+    height: 200px;
+    overflow: hidden;
+    vertical-align: bottom;
+    margin-bottom: -100px;
+}
+
+#topbanner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+#portrait-container {
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#portrait {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+
+
+
