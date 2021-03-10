@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <style>
+      body{}
+      main{width:500px;margin:0 auto;align:center;background-color:gainsboro;padding:10px;border-radius:5px;}
+      
+      #steps-todo{ }
+      #steps-completed{ text-decoration: line-through; }
+      
+      #navbar { position:fixed; }
+      #navbar-style {margin-top:50px;background-color:darkseagreen;padding:10px;border-radius:10px;line-height:140%;}
+      .nav-link { display: block; color:white; text-decoration: none;}
+      .nav-link:hover { text-decoration: underline;}
+      
+      #centeralign{display:inline-block;margin:0 auto;}
+      
+      #welcome-section {height: 100vh;width:500px;text-align:center;display:table-cell;vertical-align:middle; background-color:pink;}
+
+      #profile-link{display:block;line-height:140%;}
+      
+      #projects{margin:10px;}
+      .project-tile {
+        padding:5px; font-family: sans-serif; background-color: darkseagreen; color:white;font-weight:bold;
+        width:100px;height:100px; text-align:center;display:table-cell;vertical-align:middle;}
+      .project-tile a{color:white}
+      .project-tile a:hover{color:white; text-decoration:none;}
+      .project-tile a:active{color:white}
+      .project-tile a:visited{color:white}
+       @media ( max-width: 500px) { div{background-color: red;} }
+      
+    </style>
+    <nav id="navbar">
+      <div id="navbar-style">
+      <a class="nav-link" href="#welcome-section">welcome-section</a>
+      <a class="nav-link" href="#projects">projects</a>
+      <a class="nav-link" href="#profile-links">profile links</a>
+      <hr />
+      <a class="nav-link" href="#">other links</a>
+      <a class="nav-link" href="#">other links</a>
+      <a class="nav-link" href="#">other links</a>
+      <a class="nav-link" href="#">other links</a>
+        <hr />
+        <a class="nav-link" href="index.html">back to index.html</a>
+      </div>
+      </nav>
+  </head>
+  <body>
+    
+    <main>
+    <div id="centeralign"><div id="welcome-section"><h1>personal portfolio webpage</h1></div></div>    
+       <div id="projects"><div class="project-tile"><a href="productlanding.html">Product Landing Page Project</a></div></div>
+       <div id="profile-links"><a id="profile-link" target="_blank" href="https://github.com/andyglover">Github profile</a>
+         <a id="profile-link" target="_blank" href="https://www.freecodecamp.org/andyglover">FCC profile</a></div>
+       <div id="steps-completed">
+<!--User Story #1: My portfolio should have a welcome section with an id of welcome-section.<br />
+         User Story #2: The welcome section should have an h1 element that contains text.<br />
+         User Story #3: My portfolio should have a projects section with an id of projects.<br />
+         User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.<br />
+         User Story #5: The projects section should contain at least one link to a project.<br />
+         User Story #6: My portfolio should have a navbar with an id of navbar.<br />
+         User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.<br />
+         User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.<br />
+         User Story #9: My portfolio should have at least one media query.<br />
+         User Story #10: The height of the welcome section should be equal to the height of the viewport.<br />
+         User Story #11: The navbar should always be at the top of the viewport.<br />-->
+       </div>
+       <div id="steps-todo">
+       </div>
+      </main>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script id="rendered-js" >const projectName = 'portfolio';</script>
+  </body>
+</html>
